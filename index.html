@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Postal Code Explorer</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400">
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+	<div class="container">
+		<form id="postal_code_input_form">
+			<label for="input_postal_code">Enter US Postal Code</label>
+			<input type="number" required placeholder="Enter US Postal Code" id="input_postal_code" class="input_postal_code" autofocus>
+			<button type="submit" class="btn_explore">Explore</button>
+		</form>
+		
+		<table class="dataTable" id="dataTable" style="display: none;">
+			<tr>
+				<th>State</th>
+				<td id="state_data"></td>
+			</tr>
+			<tr>
+				<th>Place Name</th>
+				<td id="place_data"></td>
+			</tr>
+			<tr>
+				<th>Post Code</th>
+				<td id="post_code_data"></td>
+			</tr>
+			<tr>
+				<th>Latitude</th>
+				<td id="lat_data"></td>
+			</tr>
+			<tr>
+				<th>Longitude</th>
+				<td id="lon_data"></td>
+			</tr>
+		</table>
+	</div>
+	
+	<script src="app.js"></script>
+</body>
+</html>

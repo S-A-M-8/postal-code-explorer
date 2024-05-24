@@ -1,0 +1,53 @@
+body {
+    background-image: linear-gradient(to right, #8fbc8f, #98fb98);
+	font-family: "Barlow", sans-serif;
+	margin: 0;
+}
+
+.container {
+    background-color: #fff;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin: 1rem auto;
+    max-width: 500px;
+    padding: 1rem;
+}
+
+.input_postal_code,
+.btn_explore {
+	border: 1px solid #808080;
+	box-sizing: border-box;
+	font: 0.9rem "Barlow", sans-serif;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+	width: 100%;
+}
+
+.btn_explore {
+    background-color: #98fb98;
+    cursor: pointer;
+	transition: background-color 0.5s;
+}
+
+.btn_explore:focus,
+.btn_explore:hover {
+    background-color: #8fbc8f;
+}
+
+.dataTable {
+	border-collapse: collapse;
+	margin-top: 2rem;
+    width: 100%;
+}
+
+.dataTable tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+.dataTable th,
+.dataTable td {
+	border: 1px solid silver;
+	padding: 0.5rem;
+    text-align: center;
+    width: 50%;
+}
